@@ -1,0 +1,22 @@
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 191
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 191
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 191
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2439
+"GET / HTTP/1.1" 200 191
+"GET / HTTP/1.1" 200 191
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 191
+"GET / HTTP/1.1" 200 191
+"GET /about/ HTTP/1.1" 200 216
+"GET /about/ HTTP/1.1" 200 216
