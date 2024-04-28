@@ -1,34 +1,117 @@
 import logging
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from datetime import date, timedelta
+
+from .models import Client, Product, Order
 
 logger = logging.getLogger(__name__)
+
+menu_index = [{'title': 'О сайте', 'url_name': 'website'},
+              {'title': 'Каталог', 'url_name': 'catalog'},
+              {'title': 'Контакты', 'url_name': 'contacts'},
+              {'title': 'Информация о заказах', 'url_name': 'about'}]
+
+menu_orders = [{'title': 'Товары', 'url_name': 'products'},
+               {'title': 'Клиенты', 'url_name': 'clients'},
+               {'title': 'Заказы', 'url_name': 'orders'}, ]
 
 
 # Create your views here.
 def index(request):
     logger.info('Index page accessed')
-    main_page = '''<!DOCTYPE html>
-<html>
-<head>
-         <title>Главная страница</title>
-</head>
-<body>
- <h1>Главная страница моего приложения.</h1>
-</body>
-</html>'''
-    return HttpResponse(main_page)
+    data = {
+        'menu': menu_index,
+        'title': 'Главная страница сайта'
+    }
+    return render(request, 'myapp/index.html', context=data)
+
+
+def website(request):
+    logger.info('Website page accessed')
+    return render(request, 'myapp/website.html')
+
+
+def contacts(request):
+    logger.info('Contacts page accessed')
+    return render(request, 'myapp/contacts.html')
+
+
+def catalog(request):
+    logger.info('Catalog page accessed')
+    return render(request, 'myapp/catalog.html')
 
 
 def about(request):
     logger.info('About page accessed')
-    about_page = '''<!DOCTYPE html>
-<html>
-<head>
-         <title>Обо мне</title>
-</head>
-<body>
- <h1>Краткая информация обо мне, как о разработчике приложения.</h1>
-</body>
-</html>'''
-    return HttpResponse(about_page)
+    data = {
+        'menu': menu_orders,
+        'title': 'Информация о заказах'
+    }
+    return render(request, 'myapp/about.html', context=data)
+
+
+def show_orders(request):
+    logger.info('Orders page accessed')
+    return render(request, 'myapp/orders.html')
+
+
+def show_products(request):
+    logger.info('Products page accessed')
+    products = Product.objects.all()
+    data = {'products': products}
+    return render(request, 'myapp/products.html', data)
+
+
+def show_clients(request):
+    logger.info('Clients page accessed')
+    clients = Client.objects.all()
+    data = {'clients': clients}
+    return render(request, 'myapp/clients.html', data)
+
+
+def show_client_product(request, client_id, period):
+    date_now = date.today()
+    client = get_object_or_404(Client, pk=client_id)
+    match period:
+        case ('day'):
+            sort_period = date_now - timedelta(days=1)
+            ru = 'день'
+        case ('week'):
+            sort_period = date_now - timedelta(days=7)
+            ru = 'неделю'
+        case ('month'):
+            sort_period = date_now - timedelta(days=30)
+            ru = 'месяц'
+        case ('year'):
+            sort_period = date_now - timedelta(days=365)
+            ru = 'год'
+        case _:
+            return render(request, 'myapp/error.html')
+
+    orders = Order.objects.filter(order_client=client, order_date_add__gte=sort_period)
+    data = {'orders': orders}
+    return render(request, 'myapp/client.html', context=data)
+
+
+def client_sort(request, period):
+    date_now = date.today()
+    match period:
+        case ('day'):
+            sort_period = date_now - timedelta(days=1)
+            ru = 'день'
+        case ('week'):
+            sort_period = date_now - timedelta(days=7)
+            ru = 'неделю'
+        case ('month'):
+            sort_period = date_now - timedelta(days=30)
+            ru = 'месяц'
+        case ('year'):
+            sort_period = date_now - timedelta(days=365)
+            ru = 'год'
+        case _:
+            return render(request, 'myapp/error.html')
+
+    clients = Client.objects.filter(client_date_registration__gte=sort_period).order_by('client_name')
+    data = {'clients': clients, 'period': ru}
+    return render(request, 'myapp/client_sort.html', context=data)

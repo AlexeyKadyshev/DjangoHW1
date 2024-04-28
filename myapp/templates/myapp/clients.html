@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Клиенты</h1>
+<ul>
+    {% for client in clients %}
+    <li>
+        <h2>Имя: {{ client.client_name }} <br>Телефон: {{ client.client_telephone }} <br>Электронная почта: {{ client.client_email }}</h2>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% include 'myapp/includes/about.html' %}
+{% endblock %}
+

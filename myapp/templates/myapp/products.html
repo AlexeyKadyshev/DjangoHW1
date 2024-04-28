@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Товары</h1>
+<ul>
+    {% for product in products %}
+    <li>
+        <h2>Наименование: {{ product.product_name }} <br>Описание:  {{ product.product_content }} <br>Цена, р.: {{ product.product_price }}</h2>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% include 'myapp/includes/about.html' %}
+{% endblock %}

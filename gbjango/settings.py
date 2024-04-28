@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'myapp.apps.MyappConfig',
 ]
 
@@ -80,7 +81,9 @@ ROOT_URLCONF = 'gbjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'gbjango/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -30,4 +30,4 @@ class Order(models.Model):
     order_date_add = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Заказ успешно сформирован.'
+        return f'{self.order_product}'

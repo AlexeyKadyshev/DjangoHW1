@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link type="text/css" href="{% static 'myapp/css/styles.css '%}" rel="stylesheet" />
+</head>
+<body>
+{% block content %} {% endblock %}
+<a href="{% url 'index' %}">На главную страницу</a>
+</body>
+</html>
