@@ -6,15 +6,16 @@ class Command(BaseCommand):
     help = 'Add product'
 
     def handle(self, *args, **kwargs):
-        for i in range(10):
-            client = Client.objects.all()[i]
+        client = Client.objects.all()[6]
+        product_2 = Product.objects.all()[1]
+        order = Order(order_client=client, order_price=5607480)
+        order.save()
+        order.order_product.set([product_2])
+        order.save()
+        self.stdout.write(f'{type(order)}')
+        self.stdout.write(f'{order.order_client}')
+        self.stdout.write(f'{product_2}')
+        self.stdout.write(f'{order.order_product}')
+        self.stdout.write(f'{Order.objects.all()[3].order_product}')
+        self.stdout.write(f'{order.order_product.all()}')
 
-            product_1 = Product.objects.all()[0]
-            product_2 = Product.objects.all()[1]
-            product_3 = Product.objects.all()[2]
-
-            order = Order(order_client=client, order_price=5607480)
-            order.save()
-            order.order_product.set([product_1, product_2, product_3])
-
-            self.stdout.write(f'{order}')

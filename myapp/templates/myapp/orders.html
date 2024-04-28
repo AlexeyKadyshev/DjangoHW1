@@ -2,6 +2,9 @@
 
 {% block content %}
 <h1>Заказы</h1>
+{% for order in orders %}
+<h2>Номер заказа: {{ order.pk }}<br>Дата оформления: {{ order.order_date_add }}<br>Клиент: {{ order.order_client.client_name }}</h2>
+{% endfor %}
 {% include 'myapp/includes/about.html' %}
 {% endblock %}
 

@@ -51,18 +51,22 @@ def about(request):
     return render(request, 'myapp/about.html', context=data)
 
 
+# Заказы
 def show_orders(request):
     logger.info('Orders page accessed')
-    return render(request, 'myapp/orders.html')
+    orders = Order.objects.all()
+    data = {'orders': orders}
+    return render(request, 'myapp/orders.html', data)
 
 
+# Товары
 def show_products(request):
     logger.info('Products page accessed')
     products = Product.objects.all()
     data = {'products': products}
     return render(request, 'myapp/products.html', data)
 
-
+# Клиенты
 def show_clients(request):
     logger.info('Clients page accessed')
     clients = Client.objects.all()
@@ -70,6 +74,7 @@ def show_clients(request):
     return render(request, 'myapp/clients.html', data)
 
 
+# Информация о товарах клиента за указанный период
 def show_client_product(request, client_id, period):
     date_now = date.today()
     client = get_object_or_404(Client, pk=client_id)
@@ -89,11 +94,17 @@ def show_client_product(request, client_id, period):
         case _:
             return render(request, 'myapp/error.html')
 
-    orders = Order.objects.filter(order_client=client, order_date_add__gte=sort_period)
-    data = {'orders': orders}
+    orders = Order.objects.filter(order_client=client, order_date_add__gte=sort_period).order_by('order_date_add')
+    products = []
+    for order in orders:
+        products.extend(order.order_product.all())
+
+    products = set(products)
+    data = {'products': products}
     return render(request, 'myapp/client.html', context=data)
 
 
+# Все клиенты за указанный период
 def client_sort(request, period):
     date_now = date.today()
     match period:
