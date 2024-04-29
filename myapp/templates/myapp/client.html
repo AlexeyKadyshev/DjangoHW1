@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>{{ products }}</h2>
-{% endfor %}
+    <h2>Клиент: {{ client.client_name }}</h2>
+    <h2>Последние заказы за {{ period }}:</h2>
+    {% for product in products %}
+        <h2>Наименование товара: {{ product.product_name }};<br>количество: {{ product.product_count }}</h2>
+    {% endfor %}
 {% include 'myapp/includes/about.html' %}
 {% endblock %}

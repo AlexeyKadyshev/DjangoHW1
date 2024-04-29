@@ -66,6 +66,7 @@ def show_products(request):
     data = {'products': products}
     return render(request, 'myapp/products.html', data)
 
+
 # Клиенты
 def show_clients(request):
     logger.info('Clients page accessed')
@@ -78,21 +79,20 @@ def show_clients(request):
 def show_client_product(request, client_id, period):
     date_now = date.today()
     client = get_object_or_404(Client, pk=client_id)
-    match period:
-        case ('day'):
-            sort_period = date_now - timedelta(days=1)
-            ru = 'день'
-        case ('week'):
-            sort_period = date_now - timedelta(days=7)
-            ru = 'неделю'
-        case ('month'):
-            sort_period = date_now - timedelta(days=30)
-            ru = 'месяц'
-        case ('year'):
-            sort_period = date_now - timedelta(days=365)
-            ru = 'год'
-        case _:
-            return render(request, 'myapp/error.html')
+    if period == 'day':
+        sort_period = date_now - timedelta(days=1)
+        ru = 'день'
+    elif period == 'week':
+        sort_period = date_now - timedelta(days=7)
+        ru = 'неделю'
+    elif period == 'month':
+        sort_period = date_now - timedelta(days=30)
+        ru = 'месяц'
+    elif period == 'year':
+        sort_period = date_now - timedelta(days=365)
+        ru = 'год'
+    else:
+        return render(request, 'myapp/error.html')
 
     orders = Order.objects.filter(order_client=client, order_date_add__gte=sort_period).order_by('order_date_add')
     products = []
@@ -100,7 +100,7 @@ def show_client_product(request, client_id, period):
         products.extend(order.order_product.all())
 
     products = set(products)
-    data = {'products': products}
+    data = {'products': products, 'period': ru, 'client': client}
     return render(request, 'myapp/client.html', context=data)
 
 
