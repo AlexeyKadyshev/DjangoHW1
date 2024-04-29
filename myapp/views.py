@@ -107,21 +107,20 @@ def show_client_product(request, client_id, period):
 # Все клиенты за указанный период
 def client_sort(request, period):
     date_now = date.today()
-    match period:
-        case ('day'):
-            sort_period = date_now - timedelta(days=1)
-            ru = 'день'
-        case ('week'):
-            sort_period = date_now - timedelta(days=7)
-            ru = 'неделю'
-        case ('month'):
-            sort_period = date_now - timedelta(days=30)
-            ru = 'месяц'
-        case ('year'):
-            sort_period = date_now - timedelta(days=365)
-            ru = 'год'
-        case _:
-            return render(request, 'myapp/error.html')
+    if period == 'day':
+        sort_period = date_now - timedelta(days=1)
+        ru = 'день'
+    elif period == 'week':
+        sort_period = date_now - timedelta(days=7)
+        ru = 'неделю'
+    elif period == 'month':
+        sort_period = date_now - timedelta(days=30)
+        ru = 'месяц'
+    elif period == 'year':
+        sort_period = date_now - timedelta(days=365)
+        ru = 'год'
+    else:
+        return render(request, 'myapp/error.html')
 
     clients = Client.objects.filter(client_date_registration__gte=sort_period).order_by('client_name')
     data = {'clients': clients, 'period': ru}

@@ -3222,3 +3222,9 @@ Not Found: /about/product/3/day
 "GET /about/clients/ HTTP/1.1" 200 2197
 "GET /about/clients/3/day HTTP/1.1" 301 0
 "GET /about/clients/3/day/ HTTP/1.1" 200 781
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 815
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/clients/ HTTP/1.1" 200 2197
+"GET /about/clients/year/ HTTP/1.1" 200 2000
+"GET /about/clients/year/ HTTP/1.1" 200 2000
