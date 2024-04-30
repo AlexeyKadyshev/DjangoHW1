@@ -2,9 +2,9 @@ from django.db import models
 
 
 class Client(models.Model):
-    client_name = models.CharField(max_length=15)
-    client_email = models.EmailField()
-    client_telephone = models.CharField(max_length=20)
+    client_name = models.CharField(max_length=15, verbose_name='Имя')
+    client_email = models.EmailField(verbose_name='Электронная почта')
+    client_telephone = models.CharField(max_length=20, verbose_name='Телефон')
     client_date_registration = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -12,10 +12,11 @@ class Client(models.Model):
 
 
 class Product(models.Model):
-    product_name = models.CharField(max_length=35)
-    product_content = models.TextField()
-    product_price = models.DecimalField(max_digits=10, decimal_places=2)
-    product_count = models.IntegerField()
+    product_name = models.CharField(max_length=35, verbose_name='Наименование')
+    product_image = models.ImageField(upload_to='product_photos', blank=True, null=True, verbose_name='Изображение')
+    product_content = models.TextField(blank=True, verbose_name='Описание')
+    product_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Цена')
+    product_count = models.IntegerField(verbose_name='Количество')
     product_date_add = models.DateField(auto_now_add=True)
 
     def __str__(self):

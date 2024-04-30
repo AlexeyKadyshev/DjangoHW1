@@ -3228,3 +3228,793 @@ Watching for file changes with StatReloader
 "GET /about/clients/ HTTP/1.1" 200 2197
 "GET /about/clients/year/ HTTP/1.1" 200 2000
 "GET /about/clients/year/ HTTP/1.1" 200 2000
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 815
+"GET /website/ HTTP/1.1" 200 303
+"GET / HTTP/1.1" 200 815
+"GET /catalog/ HTTP/1.1" 200 298
+"GET / HTTP/1.1" 200 815
+"GET /contacts/ HTTP/1.1" 200 310
+"GET / HTTP/1.1" 200 815
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/product/ HTTP/1.1" 200 1435
+"GET /about/orders/ HTTP/1.1" 200 7909
+"GET /about/ HTTP/1.1" 200 685
+"GET / HTTP/1.1" 200 815
+"GET / HTTP/1.1" 200 815
+"GET /website/ HTTP/1.1" 200 303
+"GET / HTTP/1.1" 200 815
+"GET /catalog/ HTTP/1.1" 200 298
+"GET / HTTP/1.1" 200 815
+"GET /contacts/ HTTP/1.1" 200 310
+"GET / HTTP/1.1" 200 815
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/product/ HTTP/1.1" 200 1435
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/clients/ HTTP/1.1" 200 2197
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/orders/ HTTP/1.1" 200 7909
+"GET / HTTP/1.1" 200 815
+"GET /website/ HTTP/1.1" 200 303
+"GET / HTTP/1.1" 200 815
+"GET / HTTP/1.1" 200 815
+"GET /about/ HTTP/1.1" 200 685
+"GET /about/orders/ HTTP/1.1" 200 7909
+"GET /about/clients/ HTTP/1.1" 200 2197
+"GET / HTTP/1.1" 200 815
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4084
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp.views.registration didn't return an HttpResponse object. It returned None instead.
+"GET /registration/ HTTP/1.1" 500 68391
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 132, in registration
+    return render(request, 'registration.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration.html
+"GET /registration/ HTTP/1.1" 500 81930
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 132, in registration
+    return render(request, 'registration.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration.html
+"GET /registration/ HTTP/1.1" 500 82067
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 132, in registration
+    return render(request, 'registration.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration.html
+"GET /registration/ HTTP/1.1" 500 81930
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 123
+"GET /registration/ HTTP/1.1" 200 123
+"GET /registration/ HTTP/1.1" 200 363
+"GET /registration/ HTTP/1.1" 200 532
+"GET /about/ HTTP/1.1" 200 685
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 532
+"GET /registration/ HTTP/1.1" 200 532
+"GET /registration/ HTTP/1.1" 200 607
+"GET / HTTP/1.1" 200 939
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 134, in registration
+    form.save()
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\forms\models.py", line 553, in save
+    self._save_m2m()
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\forms\models.py", line 519, in _save_m2m
+    cleaned_data = self.cleaned_data
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'AddClientForm' object has no attribute 'cleaned_data'
+"GET /registration/ HTTP/1.1" 500 75359
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 134, in registration
+    form.save()
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\forms\models.py", line 553, in save
+    self._save_m2m()
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\forms\models.py", line 519, in _save_m2m
+    cleaned_data = self.cleaned_data
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'AddClientForm' object has no attribute 'cleaned_data'
+"GET /registration/ HTTP/1.1" 500 75496
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1139
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1139
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1139
+"POST /registration/ HTTP/1.1" 200 1139
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1343
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1139
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1139
+"POST /registration/ HTTP/1.1" 200 1139
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1139
+"POST /registration/ HTTP/1.1" 200 1139
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1139
+"POST /registration/ HTTP/1.1" 200 1139
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1167
+"POST /registration/ HTTP/1.1" 200 1167
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1167
+"POST /registration/ HTTP/1.1" 200 1167
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 936
+"POST /registration/ HTTP/1.1" 200 936
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1109
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 134, in registration
+    form = AddClientForm(request.Post)
+                         ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'Post'
+"POST /registration/ HTTP/1.1" 500 69411
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1109
+"POST /registration/ HTTP/1.1" 200 1162
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /registration/ HTTP/1.1" 200 1162
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1109
+"POST /registration/ HTTP/1.1" 200 1235
+"GET / HTTP/1.1" 200 939
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1191
+"GET /registration/ HTTP/1.1" 200 1191
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1191
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 200 1348
+"POST /registration/ HTTP/1.1" 200 1236
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 200 1238
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 939
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 939
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 200 1327
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 200 1334
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 302 0
+Not Found: /registration/myapp/successful_registration
+"GET /registration/myapp/successful_registration HTTP/1.1" 404 4177
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 302 0
+Not Found: /registration/successful_registration.html
+"GET /registration/successful_registration.html HTTP/1.1" 404 4174
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1181
+"POST /registration/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 939
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1139
+C:\pythonGBDjango\gbjango\myapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1153
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1153
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1153
+"POST /registration/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 939
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1153
+"POST /registration/ HTTP/1.1" 200 1220
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 939
+"GET /registration/ HTTP/1.1" 200 1153
+"POST /registration/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 939
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1085
+Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 153, in add_product
+    return render(request, 'myapp/add_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/add_product.html
+"GET /add_product/ HTTP/1.1" 500 82586
+C:\pythonGBDjango\gbjango\myapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 30, in index
+    return render(request, 'myapp/index.html', context=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add_product' not found. 'add_product' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 185909
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 30, in index
+    return render(request, 'myapp/index.html', context=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add_product' not found. 'add_product' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 185909
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 30, in index
+    return render(request, 'myapp/index.html', context=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add_product' not found. 'add_product' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 186046
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 607
+"GET /add_products/ HTTP/1.1" 200 607
+"GET /add_products/ HTTP/1.1" 200 630
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 630
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 741
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1603
+"GET /add_products/ HTTP/1.1" 200 1522
+C:\pythonGBDjango\gbjango\myapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /add_products/ HTTP/1.1" 200 1546
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /add_products/ HTTP/1.1" 200 1545
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+Internal Server Error: /add_products/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 178, in upload_product_photo
+    return redirect('product_detail', pk=product.pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+"POST /add_products/ HTTP/1.1" 500 88592
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+Internal Server Error: /add_products/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 178, in upload_product_photo
+    return redirect('index', pk=product.pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with keyword arguments '{'pk': 9}' not found. 1 pattern(s) tried: ['\\Z']
+"POST /add_products/ HTTP/1.1" 500 89819
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /add_products/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1086
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+"POST /add_products/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+"POST /add_products/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1086
+C:\pythonGBDjango\gbjango\myapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+"POST /add_products/ HTTP/1.1" 200 1587
+"GET /add_products/upload HTTP/1.1" 301 0
+Internal Server Error: /add_products/upload/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 171, in upload_image
+    return render(request, 'upload_image.html', data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: upload_image.html
+"GET /add_products/upload/ HTTP/1.1" 500 83082
+C:\pythonGBDjango\gbjango\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /add_products/upload/ HTTP/1.1" 200 810
+"POST /add_products/upload/ HTTP/1.1" 200 810
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+Internal Server Error: /add_products/upload/
+Traceback (most recent call last):
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\gbjango\myapp\views.py", line 171, in upload_image
+    return render(request, 'myapp/upload_image.html', data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pythonGBDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/upload_image.html
+"GET /add_products/upload/ HTTP/1.1" 500 83214
+"GET /add_products/upload/ HTTP/1.1" 200 810
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1086
+"GET /add_products/ HTTP/1.1" 200 1545
+"POST /add_products/ HTTP/1.1" 200 1619
+"GET /add_products/upload/ HTTP/1.1" 200 821

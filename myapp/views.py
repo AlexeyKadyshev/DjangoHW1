@@ -1,8 +1,11 @@
 import logging
+
+from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from datetime import date, timedelta
 
+from .forms import AddClientForm, AddProductsForm, ImageForm
 from .models import Client, Product, Order
 
 logger = logging.getLogger(__name__)
@@ -10,7 +13,9 @@ logger = logging.getLogger(__name__)
 menu_index = [{'title': 'О сайте', 'url_name': 'website'},
               {'title': 'Каталог', 'url_name': 'catalog'},
               {'title': 'Контакты', 'url_name': 'contacts'},
-              {'title': 'Информация о заказах', 'url_name': 'about'}]
+              {'title': 'Информация о заказах', 'url_name': 'about'},
+              {'title': 'Регистрация', 'url_name': 'registration'},
+              {'title': 'Добавить товар в каталог', 'url_name': 'add_products'}]
 
 menu_orders = [{'title': 'Товары', 'url_name': 'products'},
                {'title': 'Клиенты', 'url_name': 'clients'},
@@ -125,3 +130,42 @@ def client_sort(request, period):
     clients = Client.objects.filter(client_date_registration__gte=sort_period).order_by('client_name')
     data = {'clients': clients, 'period': ru}
     return render(request, 'myapp/client_sort.html', context=data)
+
+
+def registration(request):
+    if request.method == 'POST':
+        form = AddClientForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    else:
+        form = AddClientForm()
+        print('Error')
+
+    data = {'form': form}
+    return render(request, 'myapp/registration.html', data)
+
+
+def add_products(request):
+    if request.method == 'POST':
+        form = AddProductsForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            #return redirect('index')
+    else:
+        form = AddProductsForm()
+    data = {'form': form}
+    return render(request, 'myapp/add_products.html', data)
+
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+    else:
+        form = ImageForm()
+    data = {'form': form}
+    return render(request, 'myapp/upload_image.html', data)
