@@ -22,3 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
 ]
+
+admin.site.site_header = 'Панель администрирования'
+admin.site.index_title = 'Учебный проект Django-GB'
