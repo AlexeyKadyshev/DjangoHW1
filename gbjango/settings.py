@@ -29,7 +29,7 @@ CSRF_COOKIE_SECURE = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.1.101',
-    'Alexey0484.pythonanywhere.com',
+    'AlexeyK0484.pythonanywhere.com',
 ]
 
 INTERNAL_IPS = [
@@ -113,10 +113,10 @@ WSGI_APPLICATION = 'gbjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Alexey0483$default',
-        'USER': 'Alexey0483',
+        'NAME': 'AlexeyK0483$default',
+        'USER': 'AlexeyK0483',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'Alexey0483.mysql.pythonanywhere-services.com',
+        'HOST': 'AlexeyK0483.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
