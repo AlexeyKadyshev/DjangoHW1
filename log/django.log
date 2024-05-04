@@ -4449,3 +4449,23 @@ Watching for file changes with StatReloader
 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 "GET /admin/myapp/product/ HTTP/1.1" 200 16878
 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10884
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 14355
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10884
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 14355
+"GET /about/ HTTP/1.1" 200 10488
+"GET /about/product/ HTTP/1.1" 200 12648
+"GET /about/orders/ HTTP/1.1" 200 18347
+"GET /about/clients/ HTTP/1.1" 200 14070
