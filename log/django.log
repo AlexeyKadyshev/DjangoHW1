@@ -4469,3 +4469,4 @@ Not Found: /favicon.ico
 "GET /about/product/ HTTP/1.1" 200 12648
 "GET /about/orders/ HTTP/1.1" 200 18347
 "GET /about/clients/ HTTP/1.1" 200 14070
+Watching for file changes with StatReloader
