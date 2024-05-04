@@ -29,7 +29,7 @@ CSRF_COOKIE_SECURE = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.1.101',
-    'AlexeyK0484.pythonanywhere.com',
+    'AlexeyK0483.pythonanywhere.com',
 ]
 
 INTERNAL_IPS = [
